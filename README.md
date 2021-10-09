@@ -23,3 +23,6 @@ For Any further queries, refer to "https://astaxie.gitbooks.io/build-web-applica
 .
 .
 Other GO lang tutorials are also available in other Sources like the Internet, Youtube, Git and other resources.
+.
+.
+.
