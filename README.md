@@ -28,5 +28,9 @@ Other GO lang tutorials are also available in other Sources like the Internet, Y
 .
 
 
+THE LANDING PAGE OF THE GIVEN SOURCE CODE MUST COMPILE THE BELOW WEBPAGE: 
+.
+.
+.
 
 ![image](https://user-images.githubusercontent.com/55664957/136666860-4abebe85-a30a-471b-8936-9cd7255218ab.png)
