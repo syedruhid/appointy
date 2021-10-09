@@ -21,7 +21,7 @@ func main() {
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
-	render(w, "D:/Go/src/projec/templates/home.html", nil)
+	render(w, "/index.html", nil)
 }
 
 func send(w http.ResponseWriter, r *http.Request) {
@@ -31,7 +31,7 @@ func send(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if msg.Validate() == false {
-		render(w, "D:/Go/src/projec/templates/home.html", msg)
+		render(w, "/index.html", msg)
 		return
 	}
 	if err := msg.Deliver(); err != nil {
@@ -39,11 +39,11 @@ func send(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Sorry, something went wrong", http.StatusInternalServerError)
 		return
 	}
-	http.Redirect(w, r, "D:/Go/src/projec/templates/confirmation.html", http.StatusSeeOther)
+	http.Redirect(w, r, "/confirmation.html", http.StatusSeeOther)
 }
 
 func confirmation(w http.ResponseWriter, r *http.Request) {
-	render(w, "D:/Go/src/projec/templates/confirmation.html", nil)
+	render(w, "/confirmation.html", nil)
 }
 
 func render(w http.ResponseWriter, filename string, data interface{}) {
